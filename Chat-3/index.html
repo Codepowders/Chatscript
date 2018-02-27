@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <title>Document</title>
+</head>
+<body>
+
+<div id="main">
+  <h2> Opdracht2:  Chatform with textfile</h2>
+<div id="demo"></div>
+  <input placeholder="name" name="mykey" type="text" id="myText">
+  <input placeholder="message" name="value" type="text" id="myName"></br>
+  <button type="button" onclick="message(); loadText(); ">Sava data, Load all content</button>
+</div>
+
+
+<script>
+  setInterval(loadText, 1000);
+
+  function loadText() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "tekst.txt", false);
+  xhttp.send();
+  document.getElementById("demo").innerHTML = xhttp.responseText;}
+
+  function message () {
+  var x = document.getElementById("myText").value;
+  var y = document.getElementById("myName").value;
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("PUT", "Method.php?mykey=" + x + "&value=" + y, false);
+  xhttp.send();}
+</script>
+
+</body>
+</html>

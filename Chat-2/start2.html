@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+</head>
+<body>
+
+
+
+ 
+
+
+<div id="demo"></div>
+    <form action="rest2.php" method="PUT">
+    <input name="mykey" type="text" id="myText"/>
+    <input name="value" type="text" id="myName" />
+    <input type="button" name="submit" value="GET" onclick="loadText()">
+    <input type="submit" name="submit" value="PUtt" onclick="message()">
+    <input type="button" name="submit" value="PUT AND GET" onclick="message(); loadText();">
+   
+    
+    
+    
+    
+
+
+
+
+    <script>
+    var x = document.getElementById("myText").value;
+    var y = document.getElementById("myName").value;
+  
+
+ 
+
+    function loadText() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("GET", "tekst.txt", false);
+      xhttp.send();
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+
+
+
+    function message () {
+      var x = "test";
+      console.log (x);
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("PUT", "rest2.php?mykey=asdff&value=123123", false);
+      xhttp.send();
+      console.log (xhttp.response);
+  }
+    </script>
+
+
+</body>
+</html>

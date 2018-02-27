@@ -1,0 +1,79 @@
+
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;}
+
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;} }
+
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;} }
+
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;} }
+
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;} }
+
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;} }
+
+
+h2 {
+padding-left: 20px;
+font-size: 30px;
+color: Grey;
+font-weight: bold;
+text-decoration: underline;}
+
+
+#demo {
+  width: 400px;
+  height: 400px;
+  border: 6px solid white;
+  margin-bottom: 4px;
+  overflow: auto;
+  padding: 3vw;
+  background-image: url("chatbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+  color: white;}
+
+#main {
+  padding-left: 35vw;}
+
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 5px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight:bold;
+  margin: 4px 2px;
+  cursor: pointer;}
+
+
+#myText {
+  background-color: purple;}
+
+
+#myName {
+  background-color: purple;}
